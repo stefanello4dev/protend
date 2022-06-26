@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +10,7 @@
     <title>
         Protend - Project Management Admin Dashboard HTML Template
     </title>
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="{% static 'protend/images/favicon.png' %}" type="image/png">
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -16,10 +18,10 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- APP CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="{% static 'protend/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'protend/css/grid.css' %}">
+    <link rel="stylesheet" href="{% static 'protend/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'protend/css/responsive.css' %}">
 </head>
 
 <body class="sidebar-expand">
@@ -28,7 +30,7 @@
     <div class="sidebar">
         <div class="sidebar-logo">
                         <a href="index.html">
-                <img src="./images/logo.png" alt="Protend logo">
+                <img src="{% static 'protend/images/logo.png' %}" alt="Protend logo">
             </a>
             <div class="sidebar-close" id="sidebar-close">
                 <i class='bx bx-left-arrow-alt'></i>
@@ -212,26 +214,26 @@
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="en">
-                        <img src="./images/flags/us.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">English</span>
+                        <img src="{% static 'protend/images/flags/us.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">English</span>
                     </a>
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp">
-                        <img src="./images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
+                        <img src="{% static 'protend/images/flags/spain.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
                     </a>
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr">
-                        <img src="./images/flags/germany.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
+                        <img src="{% static 'protend/images/flags/germany.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
                     </a>
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it">
-                        <img src="./images/flags/italy.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
+                        <img src="{% static 'protend/images/flags/italy.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
                     </a>
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
-                        <img src="./images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
+                        <img src="{% static 'protend/images/flags/russia.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
                     </a>
                 </div>
             </div>
@@ -242,7 +244,7 @@
             </div> -->
             <div class="dropdown d-inline-block mt-12">
                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img class="rounded-circle header-profile-user" src="./images/profile/profile.png"
+                        <img class="rounded-circle header-profile-user" src="{% static 'protend/images/profile/profile.png' %}"
                             alt="Header Avatar">
                         <span class="pulse-css"></span>
                         <span class="info d-xl-inline-block  color-span">
@@ -301,7 +303,7 @@
                                 <div class="box-body">
                                     <ul class="list">
                                         <li class="d-flex no-seen">
-                                            <div class="img-mess"><img class="mr-14" src="./images/avatar/avt-1.png" alt="avt"></div>
+                                            <div class="img-mess"><img class="mr-14" src="{% static 'protend/images/avatar/avt-1.png' %}" alt="avt"></div>
                                             <div class="info">
                                                 <a href="#" class="font-w600 mb-0 color-primary">Elizabeth Holland</a>
                                                 <p class="pb-0 mb-0 line-h14 mt-6">Proin ac quam et lectus vestibulum</p>
@@ -309,7 +311,7 @@
                                         </li>
 
                                         <li class="d-flex">
-                                            <div class="img-mess"><img class="mr-14" src="./images/avatar/avt-1.png" alt="avt"></div>
+                                            <div class="img-mess"><img class="mr-14" src="{% static 'protend/images/avatar/avt-1.png' %}" alt="avt"></div>
                                             <div class="info">
                                                 <a href="#" class="font-w600 mb-0 color-primary">Elizabeth Holland</a>
                                                 <p class="pb-0 mb-0 line-h14 mt-6">Proin ac quam et lectus vestibulum</p>
@@ -384,7 +386,7 @@
                         </div>
                         <div class="box-body pt-5 pb-0">
                             <div class="img-box">
-                                <img src="./images/client/1.png" alt="">
+                                <img src="{% static 'protend/images/client/1.png' %}" alt="">
                                 <div class="pulse-css"></div>
                             </div>
                             <a href="client-details.html"><h5 class="mt-17">Tom Schneider</h5></a>
@@ -416,7 +418,7 @@
                         </div>
                         <div class="box-body pt-5 pb-0">
                             <div class="img-box">
-                                <img src="./images/client/2.png" alt="">
+                                <img src="{% static 'protend/images/client/2.png' %}" alt="">
                                 <div class="pulse-css"></div>
                             </div>
                             <a href="client-details.html"><h5 class="mt-17">Emma Carrol</h5></a>                
@@ -447,7 +449,7 @@
                         </div>
                         <div class="box-body pt-5 pb-0">
                             <div class="img-box">
-                                <img src="./images/client/3.png" alt="">
+                                <img src="{% static 'protend/images/client/3.png' %}" alt="">
                                 <div class="pulse-css"></div>
                             </div>
                             <a href="client-details.html"><h5 class="mt-17">Kyle Baker</h5></a>
@@ -478,7 +480,7 @@
                         </div>
                         <div class="box-body pt-5 pb-0">
                             <div class="img-box">
-                                <img src="./images/client/4.png" alt="">
+                                <img src="{% static 'protend/images/client/4.png' %}" alt="">
                                 <div class="pulse-css"></div>
                             </div>
                             <a href="client-details.html">
@@ -511,7 +513,7 @@
                         </div>
                         <div class="box-body pt-5 pb-0">
                             <div class="img-box">
-                                <img src="./images/client/5.png" alt="">
+                                <img src="{% static 'protend/images/client/5.png' %}" alt="">
                                 <div class="pulse-css"></div>
                             </div>
                             <a href="client-details.html"><h5 class="mt-17">Danielle Meyer</h5></a>
@@ -542,7 +544,7 @@
                         </div>
                         <div class="box-body pt-5 pb-0">
                             <div class="img-box">
-                                <img src="./images/client/6.png" alt="">
+                                <img src="{% static 'protend/images/client/6.png' %}" alt="">
                                 <div class="pulse-css"></div>
                             </div>
                             <a href="client-details.html"><h5 class="mt-17">Roy Carpenter</h5></a>
@@ -574,7 +576,7 @@
                         </div>
                         <div class="box-body pt-5 pb-0">
                             <div class="img-box">
-                                <img src="./images/client/7.png" alt="">
+                                <img src="{% static 'protend/images/client/7.png' %}" alt="">
                                 <div class="pulse-css"></div>
                             </div>
                             <a href="client-details.html"><h5 class="mt-17">Andreea Wade</h5></a>
@@ -606,7 +608,7 @@
                         </div>
                         <div class="box-body pt-5 pb-0">
                             <div class="img-box">
-                                <img src="./images/client/8.png" alt="">
+                                <img src="{% static 'protend/images/client/8.png' %}" alt="">
                                 <div class="pulse-css"></div>
                             </div>
                             <a href="client-details.html"><h5 class="mt-17">Tom Schneider</h5></a>
@@ -638,7 +640,7 @@
                         </div>
                         <div class="box-body pt-5 pb-0">
                             <div class="img-box">
-                                <img src="./images/client/9.png" alt="">
+                                <img src="{% static 'protend/images/client/9.png' %}" alt="">
                                 <div class="pulse-css"></div>
                             </div>
                             <a href="client-details.html"><h5 class="mt-17">Brandon Collins</h5></a>
@@ -670,7 +672,7 @@
                         </div>
                         <div class="box-body pt-5 pb-0">
                             <div class="img-box">
-                                <img src="./images/client/10.png" alt="">
+                                <img src="{% static 'protend/images/client/10.png' %}" alt="">
                                 <div class="pulse-css"></div>
                             </div>
                             <a href="client-details.html"><h5 class="mt-17">Kathy Andrews</h5></a>
@@ -702,7 +704,7 @@
                         </div>
                         <div class="box-body pt-5 pb-0">
                             <div class="img-box">
-                                <img src="./images/client/11.png" alt="">
+                                <img src="{% static 'protend/images/client/11.png' %}" alt="">
                                 <div class="pulse-css"></div>
                             </div>
                             <a href=""><h5 class="mt-17">Bobby Mendez</h5></a>
@@ -734,7 +736,7 @@
                         </div>
                         <div class="box-body pt-5 pb-0">
                             <div class="img-box">
-                                <img src="./images/client/12.png" alt="">
+                                <img src="{% static 'protend/images/client/12.png' %}" alt="">
                                 <div class="pulse-css"></div>
                             </div>
                             <a href=""><h5 class="mt-17">Doris Sanders</h5></a>
@@ -958,20 +960,20 @@
 
     <!-- Plugin -->
 
-    <script src="./libs/jquery/jquery.min.js"></script>
-    <script src="./libs/moment/min/moment.min.js"></script>
-    <script src="./libs/apexcharts/apexcharts.js"></script>
-    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./libs/peity/jquery.peity.min.js"></script>
-    <script src="./libs/chart.js/Chart.bundle.min.js"></script>
-    <script src="./libs/owl.carousel/owl.carousel.min.js"></script>
-    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./libs/simplebar/simplebar.min.js"></script>
+    <script src="{% static 'protend/libs/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'protend/libs/moment/min/moment.min.js' %}"></script>
+    <script src="{% static 'protend/libs/apexcharts/apexcharts.js' %}"></script>
+    <script src="{% static 'protend/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'protend/libs/peity/jquery.peity.min.js' %}"></script>
+    <script src="{% static 'protend/libs/chart.js/Chart.bundle.min.js' %}"></script>
+    <script src="{% static 'protend/libs/owl.carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'protend/libs/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'protend/libs/simplebar/simplebar.min.js' %}"></script>
 
     <!-- APP JS -->
-    <script src="./js/main.js"></script>
-    <script src="./js/shortcode.js"></script>
-    <script src="./js/pages/clients.js"></script>
+    <script src="{% static 'protend/js/main.js' %}"></script>
+    <script src="{% static 'protend/js/shortcode.js' %}"></script>
+    <script src="{% static 'protend/js/pages/clients.js' %}"></script>
 </body>
 
 </html>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +10,7 @@
     <title>
         Protend - Project Management Admin Dashboard HTML Template
     </title>
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="{% static 'protend/images/favicon.png' %}" type="image/png">
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -16,13 +18,13 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Plugin -->
-    <link rel="stylesheet" href="./libs/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="{% static 'protend/libs/owl.carousel/assets/owl.carousel.min.css' %}">
 
     <!-- APP CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="{% static 'protend/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'protend/css/grid.css' %}">
+    <link rel="stylesheet" href="{% static 'protend/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'protend/css/responsive.css' %}">
 </head>
 
 <body class="sidebar-expand">
@@ -31,7 +33,7 @@
     <div class="sidebar">
         <div class="sidebar-logo">
             <a href="index.html">
-                <img src="./images/logo.png" alt="Protend logo">
+                <img src="{% static 'protend/images/logo.png' %}" alt="Protend logo">
             </a>
             <div class="sidebar-close" id="sidebar-close">
                 <i class='bx bx-left-arrow-alt'></i>
@@ -215,26 +217,26 @@
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="en">
-                        <img src="./images/flags/us.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">English</span>
+                        <img src="{% static 'protend/images/flags/us.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">English</span>
                     </a>
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp">
-                        <img src="./images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
+                        <img src="{% static 'protend/images/flags/spain.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
                     </a>
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr">
-                        <img src="./images/flags/germany.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
+                        <img src="{% static 'protend/images/flags/germany.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
                     </a>
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it">
-                        <img src="./images/flags/italy.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
+                        <img src="{% static 'protend/images/flags/italy.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
                     </a>
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
-                        <img src="./images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
+                        <img src="{% static 'protend/images/flags/russia.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
                     </a>
                 </div>
             </div>
@@ -245,7 +247,7 @@
             </div> -->
             <div class="dropdown d-inline-block mt-12">
                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img class="rounded-circle header-profile-user" src="./images/profile/profile.png"
+                        <img class="rounded-circle header-profile-user" src="{% static 'protend/images/profile/profile.png' %}"
                             alt="Header Avatar">
                         <span class="pulse-css"></span>
                         <span class="info d-xl-inline-block  color-span">
@@ -306,7 +308,7 @@
                                 <div class="box-body">
                                     <ul class="list">
                                         <li class="d-flex no-seen">
-                                            <div class="img-mess"><img class="mr-14" src="./images/avatar/avt-1.png" alt="avt"></div>
+                                            <div class="img-mess"><img class="mr-14" src="{% static 'protend/images/avatar/avt-1.png' %}" alt="avt"></div>
                                             <div class="info">
                                                 <a href="#" class="font-w600 mb-0 color-primary">Elizabeth Holland</a>
                                                 <p class="pb-0 mb-0 line-h14 mt-6">Proin ac quam et lectus vestibulum</p>
@@ -314,7 +316,7 @@
                                         </li>
 
                                         <li class="d-flex">
-                                            <div class="img-mess"><img class="mr-14" src="./images/avatar/avt-1.png" alt="avt"></div>
+                                            <div class="img-mess"><img class="mr-14" src="{% static 'protend/images/avatar/avt-1.png' %}" alt="avt"></div>
                                             <div class="info">
                                                 <a href="#" class="font-w600 mb-0 color-primary">Elizabeth Holland</a>
                                                 <p class="pb-0 mb-0 line-h14 mt-6">Proin ac quam et lectus vestibulum</p>
@@ -578,11 +580,11 @@
                                             </div>
                                             <div class="sm-f-wrap d-flex justify-content-between">
                                                 <ul class="user-list">
-                                                    <li><img src="./images/avatar/user-1.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-2.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-3.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-4.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-5.png" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-1.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-2.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-3.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-4.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-5.png' %}" alt="user"></li>
                                                 </ul>
                                                 <ul class="tf-icon-list">
                                                     <li><a href="#"><i class='bx bx-calendar'></i></a></li>
@@ -620,11 +622,11 @@
                                             </div>
                                             <div class="sm-f-wrap d-flex justify-content-between">
                                                 <ul class="user-list">
-                                                    <li><img src="./images/avatar/user-1.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-2.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-3.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-4.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-5.png" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-1.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-2.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-3.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-4.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-5.png' %}" alt="user"></li>
                                                 </ul>
                                                 <ul class="tf-icon-list">
                                                     <li><a href="#"><i class='bx bx-calendar'></i></a></li>
@@ -662,11 +664,11 @@
                                             </div>
                                             <div class="sm-f-wrap d-flex justify-content-between">
                                                 <ul class="user-list">
-                                                    <li><img src="./images/avatar/user-1.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-2.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-3.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-4.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-5.png" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-1.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-2.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-3.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-4.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-5.png' %}" alt="user"></li>
                                                 </ul>
                                                 <ul class="tf-icon-list">
                                                     <li><a href="#"><i class='bx bx-calendar'></i></a></li>
@@ -704,11 +706,11 @@
                                             </div>
                                             <div class="sm-f-wrap d-flex justify-content-between">
                                                 <ul class="user-list">
-                                                    <li><img src="./images/avatar/user-1.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-2.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-3.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-4.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-5.png" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-1.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-2.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-3.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-4.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-5.png' %}" alt="user"></li>
                                                 </ul>
                                                 <ul class="tf-icon-list">
                                                     <li><a href="#"><i class='bx bx-calendar'></i></a></li>
@@ -746,11 +748,11 @@
                                             </div>
                                             <div class="sm-f-wrap d-flex justify-content-between">
                                                 <ul class="user-list">
-                                                    <li><img src="./images/avatar/user-1.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-2.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-3.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-4.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-5.png" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-1.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-2.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-3.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-4.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-5.png' %}" alt="user"></li>
                                                 </ul>
                                                 <ul class="tf-icon-list">
                                                     <li><a href="#"><i class='bx bx-calendar'></i></a></li>
@@ -788,11 +790,11 @@
                                             </div>
                                             <div class="sm-f-wrap d-flex justify-content-between">
                                                 <ul class="user-list">
-                                                    <li><img src="./images/avatar/user-1.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-2.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-3.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-4.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-5.png" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-1.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-2.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-3.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-4.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-5.png' %}" alt="user"></li>
                                                 </ul>
                                                 <ul class="tf-icon-list">
                                                     <li><a href="#"><i class='bx bx-calendar'></i></a></li>
@@ -830,11 +832,11 @@
                                             </div>
                                             <div class="sm-f-wrap d-flex justify-content-between">
                                                 <ul class="user-list">
-                                                    <li><img src="./images/avatar/user-1.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-2.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-3.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-4.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-5.png" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-1.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-2.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-3.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-4.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-5.png' %}" alt="user"></li>
                                                 </ul>
                                                 <ul class="tf-icon-list">
                                                     <li><a href="#"><i class='bx bx-calendar'></i></a></li>
@@ -872,11 +874,11 @@
                                             </div>
                                             <div class="sm-f-wrap d-flex justify-content-between">
                                                 <ul class="user-list">
-                                                    <li><img src="./images/avatar/user-1.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-2.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-3.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-4.png" alt="user"></li>
-                                                    <li><img src="./images/avatar/user-5.png" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-1.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-2.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-3.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-4.png' %}" alt="user"></li>
+                                                    <li><img src="{% static 'protend/images/avatar/user-5.png' %}" alt="user"></li>
                                                 </ul>
                                                 <ul class="tf-icon-list">
                                                     <li><a href="#"><i class='bx bx-calendar'></i></a></li>
@@ -943,7 +945,7 @@
                                 <li class="dlab-chat-user">
                                     <div class="d-flex bd-highlight">
                                         <div class="img_cont">
-                                            <img src="./images/avatar/message-01.png" class="rounded-circle user_img" alt="" />
+                                            <img src="{% static 'protend/images/avatar/message-01.png' %}" class="rounded-circle user_img" alt="" />
                                         </div>
                                         <div class="user_info">
                                             <a class="h6" href="message.html">Richard Coleman</a>
@@ -954,7 +956,7 @@
                                 <li class="dlab-chat-user">
                                     <div class="d-flex bd-highlight">
                                         <div class="img_cont border-pink">
-                                            <img src="./images/avatar/message-02.png" class="rounded-circle user_img" alt="" />
+                                            <img src="{% static 'protend/images/avatar/message-02.png' %}" class="rounded-circle user_img" alt="" />
                                         </div>
                                         <div class="user_info">
                                             <a class="h6" href="message.html">Jessica Elliot</a>
@@ -965,7 +967,7 @@
                                 <li class="dlab-chat-user">
                                     <div class="d-flex bd-highlight">
                                         <div class="img_cont border-green">
-                                            <img src="./images/avatar/message-03.png" class="rounded-circle user_img" alt="" />
+                                            <img src="{% static 'protend/images/avatar/message-03.png' %}" class="rounded-circle user_img" alt="" />
                                         </div>
                                         <div class="user_info">
                                             <a class="h6" href="message.html">Steve Ford</a>
@@ -976,7 +978,7 @@
                                 <li class="dlab-chat-user">
                                     <div class="d-flex bd-highlight">
                                         <div class="img_cont border-blue">
-                                            <img src="./images/avatar/message-04.png" class="rounded-circle user_img" alt="" />
+                                            <img src="{% static 'protend/images/avatar/message-04.png' %}" class="rounded-circle user_img" alt="" />
                                         </div>
                                         <div class="user_info">
                                             <a class="h6" href="message.html">Mary Ann Lucas</a>
@@ -1149,21 +1151,21 @@
     <!-- SCRIPT -->
     <!-- APEX CHART -->
 
-    <script src="./libs/jquery/jquery.min.js"></script>
-    <script src="./libs/moment/min/moment.min.js"></script>
-    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./libs/peity/jquery.peity.min.js"></script>
-    <script src="./libs/chart.js/Chart.bundle.min.js"></script>
-    <script src="./libs/owl.carousel/owl.carousel.min.js"></script>
-    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./libs/apexcharts/apexcharts.js"></script>
-    <script src="./libs/simplebar/simplebar.min.js"></script>
+    <script src="{% static 'protend/libs/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'protend/libs/moment/min/moment.min.js' %}"></script>
+    <script src="{% static 'protend/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'protend/libs/peity/jquery.peity.min.js' %}"></script>
+    <script src="{% static 'protend/libs/chart.js/Chart.bundle.min.js' %}"></script>
+    <script src="{% static 'protend/libs/owl.carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'protend/libs/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'protend/libs/apexcharts/apexcharts.js' %}"></script>
+    <script src="{% static 'protend/libs/simplebar/simplebar.min.js' %}"></script>
 
     <!-- APP JS -->
-    <script src="./js/main.js"></script>
-    <script src="./js/dashboard.js"></script>
-    <script src="./js/shortcode.js"></script>
-    <script src="./js/pages/dashboard.js"></script>
+    <script src="{% static 'protend/js/main.js' %}"></script>
+    <script src="{% static 'protend/js/dashboard.js' %}"></script>
+    <script src="{% static 'protend/js/shortcode.js' %}"></script>
+    <script src="{% static 'protend/js/pages/dashboard.js' %}"></script>
 
 
 </body>
