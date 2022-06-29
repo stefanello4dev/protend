@@ -2436,6 +2436,10 @@ a.t-title {
     cursor: pointer;
 }
 
+a.t-title.sistema {
+    padding-top: 0px;
+}
+
 .card-center h6 {
     color: rgba(34, 41, 67, 0.7);
     font-size: 16px;
@@ -2456,6 +2460,12 @@ a.t-title {
     justify-content: center;
     align-items: center;
     margin-right: 17px;
+}
+
+.icon-gold.sistema {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
 }
 
 .user-list,
