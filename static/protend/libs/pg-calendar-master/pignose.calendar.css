@@ -202,14 +202,15 @@ au {
 }
 .pignose-calendar .pignose-calendar-body .pignose-calendar-row {
 	overflow: hidden;
+	padding-bottom: 16px;
 }
 .pignose-calendar .pignose-calendar-unit {
 	float: left;
 	display: block;
-	height: 3.8em;
+	height: 2.3em;
 	width: 14.28%;
 	text-align: center;
-	line-height: 2.8em;
+	line-height: 1.3em;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -233,9 +234,9 @@ au {
 .pignose-calendar .pignose-calendar-unit a {
 	display: inline-block;
 	width: 2.5rem;
-	height: 2.5rem;
+	height: 2.0rem;
 	border-radius: 2px;
-	line-height: 2.5rem;
+	line-height: 2.0rem;
 	text-align: center;
 	text-decoration: none;
 	-webkit-transition: background-color 0.3s ease, color 0.3s ease;
