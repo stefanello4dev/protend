@@ -43,10 +43,25 @@
             })
             //______calendar
         $('.custom-calendar').pignoseCalendar({
-            disabledDates: [
-                '2021-01-20'
-            ],
-            format: 'YYY-MM-DD'
+            scheduleOptions: {
+                colors: {
+                    offer: '#2fabb7',
+                    ad: '#5c6270'
+                }
+            },
+            schedules: [{
+                name: 'offer',
+                date: '2022-06-08'
+            }, {
+                name: 'ad',
+                date: '2022-06-08'
+            }, {
+                name: 'offer',
+                date: '2022-06-05',
+            }],
+            select: function(date, context) {
+                console.log('events for this date', context.storage.schedules);
+            }
         });
         /* Function ============ */
         return {
