@@ -43,6 +43,7 @@
             })
             //______calendar
         $('.custom-calendar').pignoseCalendar({
+            lang: 'pt',
             scheduleOptions: {
                 colors: {
                     offer: '#2fabb7',
